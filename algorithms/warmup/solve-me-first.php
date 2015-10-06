@@ -1,8 +1,11 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+function solveMeFirst($a,$b){
+    return $a + $b;
+}
+$handle = fopen ("php://stdin","r");
+$_a = fgets($handle);
+$_b = fgets($handle);
+$sum = solveMeFirst((int)$_a,(int)$_b);
+print ($sum);
+fclose($handle);
 ?>
-<?echo "test\n";?>
